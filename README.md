@@ -1,2 +1,2 @@
-# Unaffordable Rhode Island Neighborhoods 
+# Rhode Island Neighborhoods with high rent burden, eviction 
  
