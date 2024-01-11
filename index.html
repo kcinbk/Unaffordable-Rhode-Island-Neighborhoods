@@ -1,26 +1,71 @@
 
 <html>
 <head>
-<h1>
-    Heading 1
-</h1>
     <style>
         body {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 0 20px;
+        }
+        h1 {
+            margin-top: 20px; 
+            margin-bottom: 50px;
+        }
+        
+        p {
+            font-size:20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-align: left;
+            padding: 0 40px;
+        }
+        
+        p.second {
+            font-size:20px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align:left !important;
+            padding: 0 40px;
+ 
+            
+        }
+
+        #iframes {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
         }
         iframe {
-            width: 50%;  
-            height: 100%;
+            display: flex;
+            width: 50%; 
+            height: 100vh;
             border: none;
         }
     </style>
 </head>
 <body>
-    <iframe src="RI housing rent burden map_01-10-2024.html"></iframe>
-    <iframe src="RI housing rent burden table_01-10-2024.html"></iframe>
+    <h1>Rhode Island's Unaffordable Neigborhoods </h1>
+    
+    <p> Between 2021 and 2023, Rhode Island recorded over 23,000 eviction filings, 
+        according to data tracked by The Eviction Lab at Princeton University. 
+        And like much of the US, a large share of renters say they are experience 
+        rent burdened, paying at least 30 percent of their household income for rent. 
+        Some even pay rent takes up 50 percent or more of their paychecks each month. </p>
+        
+    <br>
+    
+    <p class="second"> The following map and table are based on data from Census Bureau's 
+        most recent American Community Survey and eviction filing collected by Princeton's 
+        Eviction Lab. Python codes and other supporting files can be found in this 
+        <a href="https://github.com/kcinbk/Unaffordable-Rhode-Island-Neighborhoods"> Github repo</a>.</p>
+        
+    <div id="iframes">
+        <iframe src="RI housing rent burden map_01-10-2024.html"></iframe>
+        <iframe src="RI housing rent burden table_01-10-2024.html"></iframe>
+    </div>
+    
 </body>
 </html>
