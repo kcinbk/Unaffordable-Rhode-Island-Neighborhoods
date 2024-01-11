@@ -1,0 +1,2150 @@
+
+    <html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+        <style>
+            #table_wrapper {
+                margin: 0;
+            }
+            #table {
+                width: 85%;
+                margin: 0;
+                border-collapse: collapse;
+            }
+            #table th {
+                text-align: left;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    </head>
+    <body>
+        <table border="1" class="dataframe display" id="table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Census Tract</th>
+      <th>Zip Code</th>
+      <th>Municipality</th>
+      <th>Population</th>
+      <th>Estimated renters</th>
+      <th>Evictions(2021-2023)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>44003021002</td>
+      <td>02888</td>
+      <td>Warwick</td>
+      <td>4363</td>
+      <td>916</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>44003021300</td>
+      <td>02889, 02888</td>
+      <td>Warwick</td>
+      <td>4682</td>
+      <td>246</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>44003021100</td>
+      <td>02889, 02888, 02886</td>
+      <td>Warwick</td>
+      <td>4627</td>
+      <td>1571</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>44003020904</td>
+      <td>02818, 02852</td>
+      <td>East Greenwich, North Kingstown</td>
+      <td>4198</td>
+      <td>123</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>44003020200</td>
+      <td>02886, 02893</td>
+      <td>Warwick, West Warwick</td>
+      <td>5098</td>
+      <td>2779</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>44003020903</td>
+      <td>02893, 02818, 02816</td>
+      <td>West Warwick, East Greenwich, Coventry</td>
+      <td>6279</td>
+      <td>438</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>44003021001</td>
+      <td>02888</td>
+      <td>Warwick</td>
+      <td>2497</td>
+      <td>231</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>44003020604</td>
+      <td>02893, 02816</td>
+      <td>West Warwick, Coventry</td>
+      <td>5496</td>
+      <td>1590</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>44003020601</td>
+      <td>02816, 02893</td>
+      <td>Coventry, West Warwick</td>
+      <td>6449</td>
+      <td>1310</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>44003020800</td>
+      <td>02817, 02816, 02822</td>
+      <td>West Greenwich, Coventry, Exeter</td>
+      <td>6535</td>
+      <td>1105</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>44003022000</td>
+      <td>02887, 02818, 02886</td>
+      <td>Warwick, East Greenwich</td>
+      <td>3438</td>
+      <td>1419</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>44003020400</td>
+      <td>02893, 02816</td>
+      <td>West Warwick, Coventry</td>
+      <td>3203</td>
+      <td>1554</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>44003020703</td>
+      <td>02816, 02831</td>
+      <td>Coventry, Hope</td>
+      <td>6970</td>
+      <td>347</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>44003020602</td>
+      <td>02816</td>
+      <td>Coventry</td>
+      <td>3286</td>
+      <td>464</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>44003020102</td>
+      <td>02893</td>
+      <td>West Warwick</td>
+      <td>5006</td>
+      <td>1865</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>44003021800</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>3914</td>
+      <td>1118</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>44003022400</td>
+      <td>02818</td>
+      <td>East Greenwich</td>
+      <td>2143</td>
+      <td>399</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>44003021502</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>4064</td>
+      <td>528</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>44003022100</td>
+      <td>02886</td>
+      <td>Warwick</td>
+      <td>5567</td>
+      <td>714</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>44003022300</td>
+      <td>02886</td>
+      <td>Warwick</td>
+      <td>4288</td>
+      <td>1938</td>
+      <td>140</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>44003020701</td>
+      <td>02816, 02817, 02827</td>
+      <td>Coventry, West Greenwich, Greene</td>
+      <td>1901</td>
+      <td>21</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>44003020702</td>
+      <td>02816, 02827</td>
+      <td>Coventry, Greene</td>
+      <td>5045</td>
+      <td>322</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>44003021600</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>1626</td>
+      <td>58</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>44003022201</td>
+      <td>02886, 02818</td>
+      <td>Warwick, East Greenwich</td>
+      <td>7072</td>
+      <td>1139</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>44003020500</td>
+      <td>02893</td>
+      <td>West Warwick</td>
+      <td>4436</td>
+      <td>1076</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>44003020300</td>
+      <td>02816, 02893</td>
+      <td>Coventry, West Warwick</td>
+      <td>6059</td>
+      <td>3567</td>
+      <td>364</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>44003021401</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>4060</td>
+      <td>388</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>44003020101</td>
+      <td>02893</td>
+      <td>West Warwick</td>
+      <td>7107</td>
+      <td>1580</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>44003020603</td>
+      <td>02818, 02893, 02817, 02816</td>
+      <td>East Greenwich, West Warwick, West Greenwich, Coventry</td>
+      <td>6509</td>
+      <td>1118</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>44003021200</td>
+      <td>02888</td>
+      <td>Warwick</td>
+      <td>3632</td>
+      <td>700</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>44003020901</td>
+      <td>02818</td>
+      <td>East Greenwich</td>
+      <td>3808</td>
+      <td>1025</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>44003021402</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>3798</td>
+      <td>1047</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>44009050500</td>
+      <td>02852, 02874, 02832, 02822, 02892, 02877</td>
+      <td>North Kingstown, Saunderstown, Hope Valley, Exeter, West Kingston, Slocum</td>
+      <td>6952</td>
+      <td>1107</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>44009050103</td>
+      <td>02852</td>
+      <td>North Kingstown</td>
+      <td>5660</td>
+      <td>2050</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>44009050901</td>
+      <td>02891</td>
+      <td>Westerly</td>
+      <td>6924</td>
+      <td>847</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>44009050600</td>
+      <td>02832, 02894, 02836, 02892, 02875, 02812, 02898</td>
+      <td>Hope Valley, Wood River Junction, Kenyon, West Kingston, Shannock, Carolina, Wyoming</td>
+      <td>8077</td>
+      <td>289</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>44009051304</td>
+      <td>02879</td>
+      <td>Wakefield</td>
+      <td>1999</td>
+      <td>94</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>44009051306</td>
+      <td>02892, 02881, 02879, 02822</td>
+      <td>West Kingston, Kingston, Wakefield, Exeter</td>
+      <td>5992</td>
+      <td>1439</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>44009050801</td>
+      <td>02891</td>
+      <td>Westerly</td>
+      <td>5590</td>
+      <td>2440</td>
+      <td>173</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>44009051502</td>
+      <td>02882, 02874</td>
+      <td>Narragansett, Saunderstown</td>
+      <td>6603</td>
+      <td>988</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>44009041500</td>
+      <td>02807</td>
+      <td>Block Island</td>
+      <td>962</td>
+      <td>265</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>44009051305</td>
+      <td>02879, 02881, 02874</td>
+      <td>Wakefield, Kingston, Saunderstown</td>
+      <td>4519</td>
+      <td>963</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>44009050402</td>
+      <td>02874, 02852</td>
+      <td>Saunderstown, North Kingstown</td>
+      <td>2746</td>
+      <td>387</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>44009050102</td>
+      <td>02852</td>
+      <td>North Kingstown</td>
+      <td>2297</td>
+      <td>322</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>44009051000</td>
+      <td>02891</td>
+      <td>Westerly</td>
+      <td>2024</td>
+      <td>144</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>44005041200</td>
+      <td>02841, 02840</td>
+      <td>Newport</td>
+      <td>1936</td>
+      <td>1936</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>44005040303</td>
+      <td>02842</td>
+      <td>Middletown</td>
+      <td>3221</td>
+      <td>1370</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>44001030300</td>
+      <td>02806</td>
+      <td>Barrington</td>
+      <td>4642</td>
+      <td>271</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>44001030100</td>
+      <td>02915, 02806</td>
+      <td>Riverside, Barrington</td>
+      <td>4768</td>
+      <td>620</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>44001030400</td>
+      <td>02806</td>
+      <td>Barrington</td>
+      <td>4318</td>
+      <td>185</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>44001030200</td>
+      <td>02806</td>
+      <td>Barrington</td>
+      <td>3393</td>
+      <td>552</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>44001030500</td>
+      <td>02885</td>
+      <td>Warren</td>
+      <td>3190</td>
+      <td>1793</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>44001030601</td>
+      <td>02885</td>
+      <td>Warren</td>
+      <td>3667</td>
+      <td>500</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>44001030602</td>
+      <td>02885, 02809</td>
+      <td>Warren, Bristol</td>
+      <td>4260</td>
+      <td>1052</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>44001030700</td>
+      <td>02809</td>
+      <td>Bristol</td>
+      <td>2980</td>
+      <td>1725</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>44001030800</td>
+      <td>02809</td>
+      <td>Bristol</td>
+      <td>6277</td>
+      <td>1922</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>44001030901</td>
+      <td>02885, 02809</td>
+      <td>Warren, Bristol</td>
+      <td>6435</td>
+      <td>335</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>44001030902</td>
+      <td>02809</td>
+      <td>Bristol</td>
+      <td>6728</td>
+      <td>1146</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>44007010600</td>
+      <td>02915</td>
+      <td>Riverside</td>
+      <td>6181</td>
+      <td>1960</td>
+      <td>125</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>44007010701</td>
+      <td>02915</td>
+      <td>Riverside</td>
+      <td>1991</td>
+      <td>418</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>44007010702</td>
+      <td>02915</td>
+      <td>Riverside</td>
+      <td>4231</td>
+      <td>350</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>44007010800</td>
+      <td>02863, 02860</td>
+      <td>Central Falls, Pawtucket</td>
+      <td>5586</td>
+      <td>4366</td>
+      <td>251</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>44007010900</td>
+      <td>02865, 02863</td>
+      <td>Lincoln, Central Falls</td>
+      <td>5475</td>
+      <td>3719</td>
+      <td>203</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>44007011000</td>
+      <td>02863</td>
+      <td>Central Falls</td>
+      <td>7040</td>
+      <td>4746</td>
+      <td>266</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>44007011100</td>
+      <td>02865, 02863, 02860</td>
+      <td>Lincoln, Central Falls, Pawtucket</td>
+      <td>4258</td>
+      <td>3041</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>44007011403</td>
+      <td>02864, 02895</td>
+      <td>Cumberland, Woonsocket</td>
+      <td>8066</td>
+      <td>1047</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>44007011800</td>
+      <td>02904, 02860</td>
+      <td>Providence, Pawtucket</td>
+      <td>7210</td>
+      <td>2911</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>44007012000</td>
+      <td>02908, 02904, 02919, 02911</td>
+      <td>Providence, Johnston, North Providence</td>
+      <td>6617</td>
+      <td>1449</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>44009050902</td>
+      <td>02891, 02808</td>
+      <td>Westerly, Bradford</td>
+      <td>5051</td>
+      <td>673</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>44009051503</td>
+      <td>02882</td>
+      <td>Narragansett</td>
+      <td>3162</td>
+      <td>1092</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>44009051101</td>
+      <td>02813, 02808, 02891</td>
+      <td>Charlestown, Bradford, Westerly</td>
+      <td>4961</td>
+      <td>592</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>44009051302</td>
+      <td>02813, 02879</td>
+      <td>Charlestown, Wakefield</td>
+      <td>4239</td>
+      <td>485</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>44009050104</td>
+      <td>02852</td>
+      <td>North Kingstown</td>
+      <td>3834</td>
+      <td>91</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>44009050802</td>
+      <td>02891</td>
+      <td>Westerly</td>
+      <td>3748</td>
+      <td>1111</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>44009051102</td>
+      <td>02813, 02879</td>
+      <td>Charlestown, Wakefield</td>
+      <td>3037</td>
+      <td>534</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td>44009050301</td>
+      <td>02822, 02852</td>
+      <td>Exeter, North Kingstown</td>
+      <td>5039</td>
+      <td>682</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td>44009050401</td>
+      <td>02877, 02822, 02852, 02874</td>
+      <td>Slocum, Exeter, North Kingstown, Saunderstown</td>
+      <td>5226</td>
+      <td>527</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td>44007012102</td>
+      <td>02911</td>
+      <td>North Providence</td>
+      <td>4046</td>
+      <td>1722</td>
+      <td>245</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>44007012402</td>
+      <td>02909, 02919</td>
+      <td>Providence, Johnston</td>
+      <td>2907</td>
+      <td>711</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td>44007012602</td>
+      <td>02919, 02865, 02917, 02911</td>
+      <td>Johnston, Lincoln, Smithfield, North Providence</td>
+      <td>7181</td>
+      <td>1177</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td>44007012802</td>
+      <td>02896</td>
+      <td>North Smithfield</td>
+      <td>2572</td>
+      <td>505</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td>44007013300</td>
+      <td>02815, 02857, 02825, 02814</td>
+      <td>Clayville, North Scituate, Foster, Chepachet</td>
+      <td>4491</td>
+      <td>537</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td>44007013400</td>
+      <td>02905, 02903</td>
+      <td>Providence</td>
+      <td>3967</td>
+      <td>1164</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td>44007013500</td>
+      <td>02905</td>
+      <td>Providence</td>
+      <td>4544</td>
+      <td>1917</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td>44007013600</td>
+      <td>02910, 02907, 02905</td>
+      <td>Cranston, Providence</td>
+      <td>3015</td>
+      <td>851</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td>44007013701</td>
+      <td>02910, 02907</td>
+      <td>Cranston, Providence</td>
+      <td>4587</td>
+      <td>1296</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td>44007013702</td>
+      <td>02910</td>
+      <td>Cranston</td>
+      <td>3565</td>
+      <td>1029</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>44007014100</td>
+      <td>02920, 02909, 02907, 02910</td>
+      <td>Cranston, Providence</td>
+      <td>4572</td>
+      <td>2125</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td>44007014200</td>
+      <td>02920, 02886</td>
+      <td>Cranston, Warwick</td>
+      <td>4920</td>
+      <td>306</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td>44007002101</td>
+      <td>02909, 02908</td>
+      <td>Providence</td>
+      <td>2924</td>
+      <td>822</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td>44007002102</td>
+      <td>02909, 02908</td>
+      <td>Providence</td>
+      <td>6790</td>
+      <td>2610</td>
+      <td>205</td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td>44007012104</td>
+      <td>02911, 02904</td>
+      <td>North Providence, Providence</td>
+      <td>4726</td>
+      <td>1863</td>
+      <td>196</td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td>44007011902</td>
+      <td>02865, 02904</td>
+      <td>Lincoln, Providence</td>
+      <td>4889</td>
+      <td>506</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td>44007011901</td>
+      <td>02904</td>
+      <td>Providence</td>
+      <td>3271</td>
+      <td>873</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td>44007012103</td>
+      <td>02904, 02911</td>
+      <td>Providence, North Providence</td>
+      <td>3186</td>
+      <td>1592</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td>44007014400</td>
+      <td>02920, 02917</td>
+      <td>Cranston, Smithfield</td>
+      <td>3586</td>
+      <td>722</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td>44007014502</td>
+      <td>02920, 02921</td>
+      <td>Cranston</td>
+      <td>4352</td>
+      <td>1501</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td>44007014800</td>
+      <td>02920, 02921</td>
+      <td>Cranston</td>
+      <td>5492</td>
+      <td>2228</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td>44007015000</td>
+      <td>02865, 02860</td>
+      <td>Lincoln, Pawtucket</td>
+      <td>4678</td>
+      <td>1096</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td>44007015100</td>
+      <td>02863, 02860</td>
+      <td>Central Falls, Pawtucket</td>
+      <td>4438</td>
+      <td>3181</td>
+      <td>296</td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td>44007015200</td>
+      <td>02860, 02862</td>
+      <td>Pawtucket</td>
+      <td>3001</td>
+      <td>2205</td>
+      <td>310</td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td>44007015300</td>
+      <td>02861, 02860</td>
+      <td>Pawtucket</td>
+      <td>2674</td>
+      <td>1971</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td>44007015400</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>2130</td>
+      <td>1441</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td>44007015500</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>4649</td>
+      <td>2073</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td>44007015700</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>3695</td>
+      <td>820</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td>44007015800</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>3861</td>
+      <td>834</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td>44007016000</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>3329</td>
+      <td>2536</td>
+      <td>275</td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td>44007016100</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>5079</td>
+      <td>3592</td>
+      <td>345</td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td>44007016300</td>
+      <td>02904, 02860</td>
+      <td>Providence, Pawtucket</td>
+      <td>2897</td>
+      <td>321</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td>44007011701</td>
+      <td>02865, 02863</td>
+      <td>Lincoln, Central Falls</td>
+      <td>4849</td>
+      <td>1487</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td>44007012300</td>
+      <td>02919, 02917</td>
+      <td>Johnston, Smithfield</td>
+      <td>6763</td>
+      <td>720</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td>44007013102</td>
+      <td>02829, 02814, 02857, 02828</td>
+      <td>Harmony, Chepachet, North Scituate, Greenville</td>
+      <td>5157</td>
+      <td>422</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td>44007012601</td>
+      <td>02917, 02828, 02865, 02896</td>
+      <td>Smithfield, Greenville, Lincoln, North Smithfield</td>
+      <td>5065</td>
+      <td>500</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td>44007014600</td>
+      <td>02921, 02831, 02920, 02919, 02893</td>
+      <td>Cranston, Hope, Johnston, West Warwick</td>
+      <td>6939</td>
+      <td>754</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>44007014501</td>
+      <td>02921</td>
+      <td>Cranston</td>
+      <td>4517</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td>44007010300</td>
+      <td>02916, 02914</td>
+      <td>Rumford, East Providence</td>
+      <td>3999</td>
+      <td>1876</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td>44007012401</td>
+      <td>02919</td>
+      <td>Johnston</td>
+      <td>7438</td>
+      <td>1470</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>44007011600</td>
+      <td>02865, 02917, 02904, 02864</td>
+      <td>Lincoln, Smithfield, Providence, Cumberland</td>
+      <td>6751</td>
+      <td>241</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>44007003601</td>
+      <td>02906, 02912</td>
+      <td>Providence</td>
+      <td>2696</td>
+      <td>1774</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>44007013202</td>
+      <td>02825, 02815, 02857, 02831</td>
+      <td>Foster, Clayville, North Scituate, Hope</td>
+      <td>5444</td>
+      <td>538</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>44007013900</td>
+      <td>02910, 02920</td>
+      <td>Cranston</td>
+      <td>3110</td>
+      <td>1105</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>44007011702</td>
+      <td>02860, 02865</td>
+      <td>Pawtucket, Lincoln</td>
+      <td>4260</td>
+      <td>837</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>44007016500</td>
+      <td>02906, 02860</td>
+      <td>Providence, Pawtucket</td>
+      <td>3856</td>
+      <td>938</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>44007012803</td>
+      <td>02865, 02876, 02896, 02830</td>
+      <td>Lincoln, Slatersville, North Smithfield, Harrisville</td>
+      <td>5544</td>
+      <td>467</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>44007012801</td>
+      <td>02895, 02876, 02824, 02830, 02896</td>
+      <td>Woonsocket, Slatersville, Forestdale, Harrisville, North Smithfield</td>
+      <td>4419</td>
+      <td>1017</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>44007011302</td>
+      <td>02864</td>
+      <td>Cumberland</td>
+      <td>4705</td>
+      <td>293</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>44007001700</td>
+      <td>02920, 02909</td>
+      <td>Cranston, Providence</td>
+      <td>4436</td>
+      <td>2669</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>44007003200</td>
+      <td>02904, 02906</td>
+      <td>Providence</td>
+      <td>3572</td>
+      <td>1819</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>44007014000</td>
+      <td>02910, 02920</td>
+      <td>Cranston</td>
+      <td>6958</td>
+      <td>1929</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>44007016400</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>5049</td>
+      <td>3370</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>44007016600</td>
+      <td>02906, 02860</td>
+      <td>Providence, Pawtucket</td>
+      <td>1970</td>
+      <td>1308</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>44007016700</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>3600</td>
+      <td>2489</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>44007016800</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>3235</td>
+      <td>1006</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>44007016900</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>1827</td>
+      <td>205</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>44007017000</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>4464</td>
+      <td>1259</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>44007017100</td>
+      <td>02860</td>
+      <td>Pawtucket</td>
+      <td>4976</td>
+      <td>2311</td>
+      <td>198</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>44007017300</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3289</td>
+      <td>2428</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>44007010502</td>
+      <td>02915, 02914</td>
+      <td>Riverside, East Providence</td>
+      <td>4824</td>
+      <td>2130</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>44007011200</td>
+      <td>02864</td>
+      <td>Cumberland</td>
+      <td>5462</td>
+      <td>2545</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>44007018500</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>2700</td>
+      <td>546</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>44007013001</td>
+      <td>02830, 02814, 02859</td>
+      <td>Harrisville, Chepachet, Pascoag</td>
+      <td>4068</td>
+      <td>482</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>44007011500</td>
+      <td>02838, 02802, 02865</td>
+      <td>Manville, Albion, Lincoln</td>
+      <td>6616</td>
+      <td>2207</td>
+      <td>181</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>44007013201</td>
+      <td>02823, 02919, 02857, 02831</td>
+      <td>Fiskeville, Johnston, North Scituate, Hope</td>
+      <td>4960</td>
+      <td>554</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>44007012500</td>
+      <td>02919</td>
+      <td>Johnston</td>
+      <td>5222</td>
+      <td>1726</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>44007010102</td>
+      <td>02861, 02916, 02914</td>
+      <td>Pawtucket, Rumford, East Providence</td>
+      <td>3683</td>
+      <td>673</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>44007017400</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>4310</td>
+      <td>2959</td>
+      <td>329</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>44007011402</td>
+      <td>02895, 02864</td>
+      <td>Woonsocket, Cumberland</td>
+      <td>4175</td>
+      <td>394</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>44007012200</td>
+      <td>02828, 02921, 02857, 02919</td>
+      <td>Greenville, Cranston, North Scituate, Johnston</td>
+      <td>7215</td>
+      <td>1915</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>44007011301</td>
+      <td>02864</td>
+      <td>Cumberland</td>
+      <td>4550</td>
+      <td>1149</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>44007017500</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3137</td>
+      <td>1326</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>44007017600</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>2873</td>
+      <td>2084</td>
+      <td>211</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>44007017700</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3664</td>
+      <td>1019</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>44007017800</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>2851</td>
+      <td>2142</td>
+      <td>234</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>44007017900</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3090</td>
+      <td>2624</td>
+      <td>387</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>44007018000</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>2577</td>
+      <td>2343</td>
+      <td>357</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>44007012702</td>
+      <td>02917, 02828</td>
+      <td>Smithfield, Greenville</td>
+      <td>4658</td>
+      <td>370</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>44007013002</td>
+      <td>02859, 02830, 02839, 02858, 02826</td>
+      <td>Pascoag, Harrisville, Mapleville, Oakland, Glendale</td>
+      <td>7280</td>
+      <td>1164</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>44007015900</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>3216</td>
+      <td>1635</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>44007002000</td>
+      <td>02919, 02911, 02909, 02908</td>
+      <td>Johnston, North Providence, Providence</td>
+      <td>7251</td>
+      <td>3670</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>44007012701</td>
+      <td>02917, 02828, 02814</td>
+      <td>Smithfield, Greenville, Chepachet</td>
+      <td>5182</td>
+      <td>621</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>44007014300</td>
+      <td>02910, 02920</td>
+      <td>Cranston</td>
+      <td>4954</td>
+      <td>1139</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>44007000101</td>
+      <td>02905</td>
+      <td>Providence</td>
+      <td>4418</td>
+      <td>2228</td>
+      <td>112</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>44007010501</td>
+      <td>02914, 02915</td>
+      <td>East Providence, Riverside</td>
+      <td>5195</td>
+      <td>1415</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>44007015600</td>
+      <td>02861</td>
+      <td>Pawtucket</td>
+      <td>2552</td>
+      <td>629</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>44007012900</td>
+      <td>02830, 02859</td>
+      <td>Harrisville, Pascoag</td>
+      <td>4857</td>
+      <td>1796</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>44007018400</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>6430</td>
+      <td>2849</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>44007013101</td>
+      <td>02814, 02825, 02859, 02857</td>
+      <td>Chepachet, Foster, Pascoag, North Scituate</td>
+      <td>4882</td>
+      <td>388</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>44007000200</td>
+      <td>02905, 02907</td>
+      <td>Providence</td>
+      <td>6634</td>
+      <td>4131</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>44007000400</td>
+      <td>02905, 02907</td>
+      <td>Providence</td>
+      <td>4373</td>
+      <td>2839</td>
+      <td>217</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>44007000102</td>
+      <td>02907, 02905, 02910</td>
+      <td>Providence, Cranston</td>
+      <td>5667</td>
+      <td>2283</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>44007000500</td>
+      <td>02907, 02905</td>
+      <td>Providence</td>
+      <td>3674</td>
+      <td>2163</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>44007000600</td>
+      <td>02903, 02905</td>
+      <td>Providence</td>
+      <td>2414</td>
+      <td>1736</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>44007000700</td>
+      <td>02905, 02907, 02903</td>
+      <td>Providence</td>
+      <td>2624</td>
+      <td>2152</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>44007000800</td>
+      <td>02903, 02908, 02902, 02901</td>
+      <td>Providence</td>
+      <td>4902</td>
+      <td>4312</td>
+      <td>214</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>44007000900</td>
+      <td>02909, 02903</td>
+      <td>Providence</td>
+      <td>2913</td>
+      <td>2579</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>44007001000</td>
+      <td>02909</td>
+      <td>Providence</td>
+      <td>2523</td>
+      <td>2164</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <th>176</th>
+      <td>44007001100</td>
+      <td>02903, 02909</td>
+      <td>Providence</td>
+      <td>2542</td>
+      <td>1571</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <th>177</th>
+      <td>44007001200</td>
+      <td>02909, 02903, 02907</td>
+      <td>Providence</td>
+      <td>4370</td>
+      <td>3649</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <th>178</th>
+      <td>44007001300</td>
+      <td>02907, 02909</td>
+      <td>Providence</td>
+      <td>3758</td>
+      <td>2548</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <th>179</th>
+      <td>44007001500</td>
+      <td>02910, 02907</td>
+      <td>Cranston, Providence</td>
+      <td>3095</td>
+      <td>1062</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>180</th>
+      <td>44005041702</td>
+      <td>02878</td>
+      <td>Tiverton</td>
+      <td>4653</td>
+      <td>267</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <th>181</th>
+      <td>44007001900</td>
+      <td>02909</td>
+      <td>Providence</td>
+      <td>5061</td>
+      <td>3571</td>
+      <td>537</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>44007002200</td>
+      <td>02908, 02909</td>
+      <td>Providence</td>
+      <td>5647</td>
+      <td>3636</td>
+      <td>274</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>44007002300</td>
+      <td>02918, 02908, 02921</td>
+      <td>Providence, Cranston</td>
+      <td>4950</td>
+      <td>1499</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <th>184</th>
+      <td>44007002500</td>
+      <td>02903, 02909, 02908</td>
+      <td>Providence</td>
+      <td>3117</td>
+      <td>2413</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <th>185</th>
+      <td>44007002600</td>
+      <td>02908</td>
+      <td>Providence</td>
+      <td>2792</td>
+      <td>2061</td>
+      <td>277</td>
+    </tr>
+    <tr>
+      <th>186</th>
+      <td>44007002700</td>
+      <td>02904, 02908</td>
+      <td>Providence</td>
+      <td>5112</td>
+      <td>3244</td>
+      <td>445</td>
+    </tr>
+    <tr>
+      <th>187</th>
+      <td>44005041701</td>
+      <td>02878</td>
+      <td>Tiverton</td>
+      <td>3570</td>
+      <td>529</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>188</th>
+      <td>44007003100</td>
+      <td>02906, 02904, 02908, 02903</td>
+      <td>Providence</td>
+      <td>4475</td>
+      <td>3003</td>
+      <td>258</td>
+    </tr>
+    <tr>
+      <th>189</th>
+      <td>44007003300</td>
+      <td>02906, 02904</td>
+      <td>Providence</td>
+      <td>4380</td>
+      <td>1612</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <th>190</th>
+      <td>44007003400</td>
+      <td>02906</td>
+      <td>Providence</td>
+      <td>5047</td>
+      <td>917</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>191</th>
+      <td>44007003500</td>
+      <td>02906</td>
+      <td>Providence</td>
+      <td>5077</td>
+      <td>2974</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>192</th>
+      <td>44007003602</td>
+      <td>02904, 02903, 02906, 02912</td>
+      <td>Providence</td>
+      <td>6105</td>
+      <td>2050</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>44007003700</td>
+      <td>02912, 02903, 02906</td>
+      <td>Providence</td>
+      <td>3783</td>
+      <td>2483</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>194</th>
+      <td>44007010101</td>
+      <td>02916, 02860</td>
+      <td>Rumford, Pawtucket</td>
+      <td>4221</td>
+      <td>897</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <th>195</th>
+      <td>44007010200</td>
+      <td>02914, 02916</td>
+      <td>East Providence, Rumford</td>
+      <td>6048</td>
+      <td>2271</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <th>196</th>
+      <td>44005040900</td>
+      <td>02840</td>
+      <td>Newport</td>
+      <td>5054</td>
+      <td>2257</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>197</th>
+      <td>44003021901</td>
+      <td>02886</td>
+      <td>Warwick</td>
+      <td>3286</td>
+      <td>784</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>198</th>
+      <td>44003021902</td>
+      <td>02886, 02889</td>
+      <td>Warwick</td>
+      <td>3431</td>
+      <td>881</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <th>199</th>
+      <td>44003022202</td>
+      <td>02818, 02886</td>
+      <td>East Greenwich, Warwick</td>
+      <td>4043</td>
+      <td>2483</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <th>200</th>
+      <td>44003021501</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>3295</td>
+      <td>896</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th>201</th>
+      <td>44003021700</td>
+      <td>02889</td>
+      <td>Warwick</td>
+      <td>4968</td>
+      <td>838</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <th>202</th>
+      <td>44003021903</td>
+      <td>02886, 02889</td>
+      <td>Warwick</td>
+      <td>3989</td>
+      <td>329</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>203</th>
+      <td>44009050302</td>
+      <td>02852</td>
+      <td>North Kingstown</td>
+      <td>2917</td>
+      <td>851</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th>204</th>
+      <td>44009051202</td>
+      <td>02879, 02883, 02880, 02882</td>
+      <td>Wakefield, Peace Dale, Narragansett</td>
+      <td>4733</td>
+      <td>2150</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>44009051201</td>
+      <td>02879</td>
+      <td>Wakefield</td>
+      <td>5157</td>
+      <td>858</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <th>206</th>
+      <td>44005040304</td>
+      <td>02842, 02871</td>
+      <td>Middletown, Portsmouth</td>
+      <td>3411</td>
+      <td>1283</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <th>207</th>
+      <td>44005040102</td>
+      <td>02842, 02871</td>
+      <td>Middletown, Portsmouth</td>
+      <td>5631</td>
+      <td>915</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <th>208</th>
+      <td>44005040302</td>
+      <td>02840, 02842</td>
+      <td>Newport, Middletown</td>
+      <td>2876</td>
+      <td>510</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td>44005040400</td>
+      <td>02842</td>
+      <td>Middletown</td>
+      <td>6045</td>
+      <td>1529</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td>44005041000</td>
+      <td>02840</td>
+      <td>Newport</td>
+      <td>1971</td>
+      <td>1110</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td>44005041602</td>
+      <td>02878</td>
+      <td>Tiverton</td>
+      <td>4745</td>
+      <td>982</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td>44005040101</td>
+      <td>02871</td>
+      <td>Portsmouth</td>
+      <td>4910</td>
+      <td>1098</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td>44005040200</td>
+      <td>02840, 02841, 02842</td>
+      <td>Newport, Middletown</td>
+      <td>1456</td>
+      <td>1445</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td>44005040500</td>
+      <td>02840, 02842</td>
+      <td>Newport, Middletown</td>
+      <td>4636</td>
+      <td>2780</td>
+      <td>367</td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td>44005041100</td>
+      <td>02840</td>
+      <td>Newport</td>
+      <td>1388</td>
+      <td>781</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td>44005041400</td>
+      <td>02837, 02878, 02801</td>
+      <td>Little Compton, Tiverton, Adamsville</td>
+      <td>3622</td>
+      <td>436</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td>44005041601</td>
+      <td>02878</td>
+      <td>Tiverton</td>
+      <td>3356</td>
+      <td>1302</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td>44005040600</td>
+      <td>02842, 02840</td>
+      <td>Middletown, Newport</td>
+      <td>4445</td>
+      <td>2255</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td>44005040700</td>
+      <td>02842, 02840</td>
+      <td>Middletown, Newport</td>
+      <td>3264</td>
+      <td>999</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td>44005040800</td>
+      <td>02840</td>
+      <td>Newport</td>
+      <td>2393</td>
+      <td>1158</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td>44005041300</td>
+      <td>02835</td>
+      <td>Jamestown</td>
+      <td>5554</td>
+      <td>590</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>222</th>
+      <td>44009051400</td>
+      <td>02892, 02881</td>
+      <td>West Kingston, Kingston</td>
+      <td>5289</td>
+      <td>1469</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td>44009051504</td>
+      <td>02882, 02879</td>
+      <td>Narragansett, Wakefield</td>
+      <td>4858</td>
+      <td>2062</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <th>224</th>
+      <td>44007018100</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3187</td>
+      <td>2470</td>
+      <td>278</td>
+    </tr>
+    <tr>
+      <th>225</th>
+      <td>44007018200</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>3448</td>
+      <td>2314</td>
+      <td>198</td>
+    </tr>
+    <tr>
+      <th>226</th>
+      <td>44007018300</td>
+      <td>02895</td>
+      <td>Woonsocket</td>
+      <td>1473</td>
+      <td>1073</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <th>227</th>
+      <td>44007013800</td>
+      <td>02920, 02910</td>
+      <td>Cranston</td>
+      <td>5044</td>
+      <td>1247</td>
+      <td>126</td>
+    </tr>
+    <tr>
+      <th>228</th>
+      <td>44007002900</td>
+      <td>02860, 02904, 02908, 02940</td>
+      <td>Pawtucket, Providence</td>
+      <td>7461</td>
+      <td>3300</td>
+      <td>360</td>
+    </tr>
+    <tr>
+      <th>229</th>
+      <td>44007010400</td>
+      <td>02914</td>
+      <td>East Providence</td>
+      <td>6639</td>
+      <td>3707</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <th>230</th>
+      <td>44007014700</td>
+      <td>02920, 02910</td>
+      <td>Cranston</td>
+      <td>8569</td>
+      <td>4912</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <th>231</th>
+      <td>44007001800</td>
+      <td>02909, 02919</td>
+      <td>Providence, Johnston</td>
+      <td>6982</td>
+      <td>3845</td>
+      <td>347</td>
+    </tr>
+    <tr>
+      <th>232</th>
+      <td>44007002400</td>
+      <td>02911, 02908, 02904, 02909</td>
+      <td>North Providence, Providence</td>
+      <td>8783</td>
+      <td>3185</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>233</th>
+      <td>44007001400</td>
+      <td>02909, 02907</td>
+      <td>Providence</td>
+      <td>6405</td>
+      <td>5047</td>
+      <td>273</td>
+    </tr>
+  </tbody>
+</table>
+        <script>
+            $(document).ready(function () {
+                $('#table').DataTable();
+            });
+        </script>
+    </body>
+    </html>
+    
