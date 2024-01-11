@@ -1,2 +1,2 @@
-# Rhode Island Neighborhoods with high rent burden, eviction 
+# Rhode Island neighborhoods with high percentage of rent burden, evictions 
  
