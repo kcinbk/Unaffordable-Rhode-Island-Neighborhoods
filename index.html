@@ -12,9 +12,16 @@
             background-color: rgb(236, 236, 218)
         }
         h1 {
-            margin-top: 20px; 
-            margin-bottom: 50px;
+            margin-top: 30px; 
+            margin-bottom: 10px;
         }
+
+        h3 {
+           
+            margin-bottom: 20px;
+        }
+
+        
         
         p {
             font-size:20px;
@@ -30,8 +37,6 @@
             margin-bottom: 20px;
             text-align:left !important;
             padding: 0 40px;
- 
-            
         }
 
         #iframes {
@@ -45,26 +50,47 @@
             height: 100vh;
             border: none;
         }
+
+        .red {
+    background-color: coral;
+    }
+
+        .yellow {
+    background-color: yellow;
+    }
+        .grey {
+    background-color: D3D3D3;       
+        }
+
     </style>
 </head>
 <body>
     <h1>Rhode Island's Unaffordable Neigborhoods </h1>
+
+    <h3>by <a href="https:kcinbk.github.io">Keenan Chen </a> </h3>
     
-    <p> Between 2021 and 2023, Rhode Island recorded over 23,000 eviction filings, 
-        according to data tracked by The Eviction Lab at Princeton University. 
-        And like much of the US, a substantial number of residents are
-        rent burdened, paying at least 30 percent of their household income for rent. 
-        Worse, some even experience severe rent burdened, meaning their monthly rent takes up 50 percent or more of their monthly paychecks. 
+    <p> 
+        Between 2021 and 2023, Rhode Island recorded over 23,000 eviction filings.
+        Similar to many communities across the United States, a substantial number of residents are
+        rent burdened, meaning paying at least 30 percent of their household income for rent. 
+        Worse, some even experience severe rent burdened, meaning their monthly rent takes up 50 percent 
+        or more of their monthly paychecks. 
     </p>
         
     <br>
     
-    <p class="second"> The below map and table are based on data from the Census Bureau's 
-        most recent American Community Survey and eviction filings collected by Princeton's 
-        Eviction Lab between 2021 and 2023. The base layer of the interactive map, a heat map, illustrates severe rent-burdened neighborhoods; 
-        the overlaid yellow dots show eviction volumes in each census tract area, while the grey circles indicate the size of the renter population. 
+    <p class="second"> 
+        The below interactive map and table illustrate the number of evictiona and rent burden in Rhode Island at the zip code level. 
+        The hotter an area, the higher <mark class="red">rent burden</mark> residetns are facing. 
+        The yellow bubbles represent <mar class='yellow'>eviction volumne</mar>, 
+        while the grey bubbles indicate <mar class="grey">the size of local population</mark>. 
+    </p>
+
+    <p class="second">
+        The illustration and analysis are based of data from the Census Bureau's most recent American Community Survey 
+        and eviction filings tracked by Princeton's Eviction Lab from 2021 through 2023. 
         Python codes and other supporting files can be found in this 
-        <a href="https://github.com/kcinbk/Unaffordable-Rhode-Island-Neighborhoods"> Github repo</a>.</p>
+        <a href="https://github.com/kcinbk/Unaffordable-Rhode-Island-Neighborhoods"> Github repo</a>.
     </p>
 
     <div id="iframes">
@@ -72,5 +98,8 @@
         <iframe src="RI housing rent burden table_01-10-2024.html"></iframe>
     </div>
     
+    <br>
+    
+
 </body>
 </html>
